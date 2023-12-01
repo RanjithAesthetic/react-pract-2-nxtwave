@@ -1,23 +1,22 @@
 const Box = (props) => {
-  //  Write your code here.
-  const { boxCls, boxText } = props;
+  const { text, className } = props;
+
   return (
-    <div className={boxCls}>
-      <p className="box-text">{boxText}</p>
+    <div className={`box ${className}`}>
+      <p className="box-title">{text}</p>
     </div>
   );
 };
 
 const element = (
-  <div className="main-container">
-    <h1>Boxes</h1>
-    <div className="box-container">
-      <Box boxCls="box-small" boxText="Small"></Box>
-      <Box boxCls="box-medium" boxText="Medium"></Box>
-      <Box boxCls="box-large" boxText="Large"></Box>
+  <div className="boxes-app-container">
+    <h1 className="heading">Boxes</h1>
+    <div className="boxes-container">
+      <Box text="Small" className="small-box" />
+      <Box text="Medium" className="medium-box" />
+      <Box text="Large" className="large-box" />
     </div>
   </div>
 );
-//  Write your code here.
 
 ReactDOM.render(element, document.getElementById("root"));
