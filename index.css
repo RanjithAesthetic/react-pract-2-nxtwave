@@ -1,0 +1,80 @@
+/* Write your code here. */
+.heading {
+  font-family: "Roboto";
+  font-size: 35px;
+  color: #0f172a;
+  font-weight: 600;
+}
+.box-text {
+  font-family: "Bree serif";
+  font-size: 18px;
+  font-weight: bold;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  flex-wrap: nowrap;
+}
+
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: #fbbf24;
+  margin: 10px 0px;
+}
+.box-2 {
+  height: 150px;
+  width: 150px;
+  background-color: #38bdf8;
+  margin: 10px 0px;
+}
+.box-3 {
+  height: 250px;
+  width: 250px;
+  background-color: #ec4899;
+  margin: 10px 0px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .box-1 {
+    height: 100px;
+    width: 100px;
+    background-color: #fbbf24;
+    margin: 0px 10px;
+  }
+  .box-2 {
+    height: 200px;
+    width: 200px;
+    background-color: #38bdf8;
+    margin: 0px 10px;
+  }
+  .box-3 {
+    height: 300px;
+    width: 300px;
+    background-color: #ec4899;
+    margin: 0px 10px;
+  }
+}
